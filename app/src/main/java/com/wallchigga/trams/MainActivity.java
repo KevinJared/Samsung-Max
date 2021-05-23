@@ -252,7 +252,7 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
     private boolean verifyValidSignature(String signedData, String signature) {
         try {
             // To get key go to Developer Console > Select your app > Development Tools > Services & APIs.
-            String base64Key = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt0IxjxsHSC7mifonsw9Nvqobhp+Y/w6A/AdCxY7J4yJPfXIc5fdDFk1MFCFICNEb4QJt165sTdtNFFUxQLi2HgH/nG7V3AmpvK51cYueDnDoaSMb/40H2AITi4n5YnugzBl0+c+B39IGSv7CRFIqbIgYWikO0gudlAVIUQD4i1rYmMkaGCqWcEmjxrTytIjYvBr1r8mzJdegS8f/1QF+I5QmYiENyeXUzItVWcFlAAfUpoX0UoOaKkvqRFdZa3Z9AN22Tyk1IDBo7iWFQ8qf8ZbuddeEadOkA3OHQEvBoIYBbEN8OJZITnwDiim++F8rsSPe4LuU525MoDNSkeuMuwIDAQAB";
+            String base64Key = "// insert key here";
             return Security.verifyPurchase(base64Key, signedData, signature);
         } catch (IOException e) {
             return false;
