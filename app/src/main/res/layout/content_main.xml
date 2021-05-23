@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/pick1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/pick2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/pick3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/pick4" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/pick5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/pick6" />
+
+
+        <TextView
+            android:id="@+id/premium_content"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Premium Content"
+            android:textSize="@dimen/fab_margin"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/subscription_status"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_weight="4"
+            android:textColor="@color/design_default_color_secondary"
+            android:gravity="center"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/fab_margin"
+            android:paddingRight="@dimen/fab_margin"
+            android:textSize="@dimen/fab_margin"
+            android:textColor="#000000"
+            android:text="Try 3-day free trial, then Subscribe to $324.00/6 Months. Cancel anytime. Go pro to get all updates and wallpapers. \n thUnsubscribed users can still use is app. There will be a charge for your account  3 days after subscription.\n Go to Google Play Setting if you want to turn off auto-renewal. \n CLICK SUBSCRIBE TO CONTINUE"
+            android:textAlignment="center" />
+
+
+        <Button
+            android:id="@+id/subscribe"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="subscribe"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:visibility="gone"
+            android:onClick="subscribe"
+            />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.gridlayout.widget.GridLayout>
+
+    </LinearLayout>
+</ScrollView>
